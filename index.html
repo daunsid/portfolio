@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Adeboye — Senior AI/ML Engineer</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo-dark-bg.svg">
+<link rel="apple-touch-icon" href="assets/logo-dark-bg-512.png">
+<meta name="description" content="Senior AI/ML engineer building AI automation, custom software and workflow improvements for organizations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0D10;--card:#12151A;--text:#EDE9E1;--mute:#A8ADB5;--faint:#787E87;--brass:#C9A24B;--teal:#5FA39C;--line:#20242B;--line2:#333944;
+--d:'Fraunces',Georgia,serif;--b:'Inter',system-ui,sans-serif;--m:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--b);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,13,16,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--d);font-weight:600;font-size:18px}
+.brand svg{width:26px;height:24px}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;font:13px var(--m);color:var(--mute)}
+nav ul a:hover{color:var(--brass)}
+.eyebrow{font:12px var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:16px}
+h1,h2,h3{font-family:var(--d);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.hero{padding:clamp(56px,10vw,110px) 0 clamp(48px,8vw,90px);display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+h1{font-size:clamp(38px,6vw,68px);margin-bottom:22px}
+h1 em{color:var(--brass);font-style:italic;font-weight:500}
+.lead{font-size:18px;color:var(--mute);max-width:56ch;margin-bottom:34px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font:13px var(--m);padding:13px 22px;border:1px solid var(--line2);border-radius:2px;transition:.2s}
+.btn.p{background:var(--brass);border-color:var(--brass);color:var(--bg)}
+.btn:hover{border-color:var(--brass);color:var(--brass)}.btn.p:hover{color:var(--bg);opacity:.85}
+.photo{width:220px;height:264px;border:1px solid var(--line2);object-fit:cover;background:var(--card)}
+section{padding:clamp(52px,8vw,88px) 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.sub{color:var(--mute);max-width:58ch;margin-bottom:42px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.svc{padding:26px;border:1px solid var(--line);background:var(--card);border-radius:3px}
+.svc .n{font:11px var(--m);color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.svc h3{font-size:20px;margin-bottom:10px}.svc p{font-size:15px;color:var(--mute)}
+.proj{display:grid;grid-template-columns:1.05fr 1fr;gap:36px;align-items:center;padding:36px 0;border-top:1px solid var(--line)}
+.proj:nth-child(even) .viz{order:2}
+.viz{border:1px solid var(--line);background:var(--card);border-radius:3px;padding:14px}
+.viz img{display:block;width:100%;height:auto;border-radius:2px}
+.tag{font:11px var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.proj h3{font-size:28px;margin-bottom:12px}.proj p{color:var(--mute);margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chips span{font:11px var(--m);padding:4px 9px;border:1px solid var(--line2);color:var(--mute);border-radius:2px}
+.link{font:13px var(--m);color:var(--brass);border-bottom:1px solid var(--brass);padding-bottom:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.row{padding:18px 0;border-bottom:1px solid var(--line)}
+.row b{font-family:var(--d);font-weight:500;font-size:17px;display:block;margin-bottom:4px}
+.row span{font:12.5px var(--m);color:var(--faint)}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+footer{padding:36px 0;border-top:1px solid var(--line);font:12px var(--m);color:var(--faint)}
+.s{stroke:var(--line2);fill:none}.f1{fill:var(--brass)}.f2{fill:var(--teal)}.f3{fill:var(--line2)}.f4{fill:#1a1e25}
+.t{font:9px var(--m);fill:var(--mute)}
+@media(max-width:760px){.hero,.proj,.two{grid-template-columns:1fr}.proj:nth-child(even) .viz{order:0}.photo{width:150px;height:180px;order:-1}nav ul{gap:16px}nav ul li:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top"><svg viewBox="42 48 116 104"><g fill="none" stroke="#C9A24B" stroke-width="9" stroke-linecap="round"><path d="M55 60V140M55 62C96 62 96 138 55 138M127 60L108 140M127 60L146 140M114.5 110H139.5"/></g><circle cx="127" cy="60" r="5" fill="#5FA39C"/></svg>Daniel Adeboye</a>
+<ul><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header class="wrap hero" id="top">
+<div>
+<div class="eyebrow">Senior AI / ML Engineer</div>
+<h1>I build AI that makes organizations <em>work better.</em></h1>
+<p class="lead">From automation and custom software to AI/ML strategy, I turn messy workflows into reliable, measurable systems. PhD researcher at the University of Nottingham, with production products shipped across hiring, healthcare and data.</p>
+<div class="btns"><a class="btn p" href="#contact">Work with me</a><a class="btn" href="#projects">See projects</a><a class="btn" href="resume.pdf">Download resume</a></div>
+</div>
+<img class="photo" src="photo-duotone.png" alt="Daniel Adeboye" onerror="this.style.display='none'">
+</header>
+
+<section id="services"><div class="wrap">
+<div class="eyebrow">Services</div><h2>How I can help</h2>
+<p class="sub">Engagements range from a focused audit to building and shipping a full product.</p>
+<div class="grid">
+<div class="svc"><div class="n">01</div><h3>Software Engineering</h3><p>Production-grade web and backend systems: clean architecture, tested, documented and built to scale with your team.</p></div>
+<div class="svc"><div class="n">02</div><h3>AI Automation</h3><p>Agents and pipelines that take over repetitive work such as triage, screening, document handling and reporting, with humans kept in the loop where it matters.</p></div>
+<div class="svc"><div class="n">03</div><h3>Workflow Improvement with AI</h3><p>Map how work really flows, find the bottlenecks, and apply AI where it pays back: fewer handoffs, faster turnaround, clearer visibility.</p></div>
+<div class="svc"><div class="n">04</div><h3>Custom Software Solutions</h3><p>Tools designed around your process rather than a generic template: internal platforms, dashboards, integrations and client-facing apps.</p></div>
+<div class="svc"><div class="n">05</div><h3>AI / ML Consulting</h3><p>Honest guidance on what to build, buy or skip: feasibility, model and data strategy, evaluation, and a roadmap your team can execute.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="eyebrow">Selected work</div><h2>Projects</h2>
+<p class="sub">Products I've built and shipped. Each links to the live site.</p>
+
+<article class="proj">
+<div class="viz"><a href="https://goghr.ai" target="_blank" rel="noopener"><img src="assets/goghr.jpg" alt="Goghr homepage: Vince, the agentic Agentic AI recruitment" loading="lazy"></a></div>
+<div><div class="tag">Agentic AI recruitment</div><h3>Goghr</h3>
+<p>An agentic hiring platform. Vince coordinates specialist AI agents that source candidates, screen CVs, schedule and run interviews, and verify credentials, so teams reach a shortlist faster.</p>
+<div class="chips"><span>Multi-agent AI</span><span>CV screening</span><span>Interview automation</span></div>
+<a class="link" href="https://goghr.ai" target="_blank" rel="noopener">goghr.ai ↗</a></div>
+</article>
+
+<article class="proj">
+<div class="viz"><a href="https://v2-main--pollsensei.netlify.app/" target="_blank" rel="noopener"><img src="assets/pollsensei.jpg" alt="Pollsensei homepage: AI-powered survey creation" loading="lazy"></a></div>
+<div><div class="tag">AI survey design &amp; analysis</div><h3>Pollsensei</h3>
+<p>An AI-powered survey platform: describe the survey you need in a prompt, then turn responses into clear reports. It was also the subject of a peer-reviewed paper on ML-driven survey data management.</p>
+<div class="chips"><span>Machine learning</span><span>Survey analytics</span><span>Data pipelines</span></div>
+<a class="link" href="https://v2-main--pollsensei.netlify.app/" target="_blank" rel="noopener">Open Pollsensei ↗</a></div>
+</article>
+
+<article class="proj">
+<div class="viz"><a href="https://cloudclinic.com" target="_blank" rel="noopener"><img src="assets/cloudclinic.jpg" alt="My CloudClinic patient app on Google Play with app screens" loading="lazy"></a></div>
+<div><div class="tag">AI EHR for continuous care</div><h3>Cloud Clinic</h3>
+<p>An AI-native electronic health record for modern practices, combining charting, telehealth and an AI scribe with monitoring between visits (private beta). The patient app, My CloudClinic, is on Google Play, where patients book doctors and pay from an in-app wallet.</p>
+<div class="chips"><span>Healthcare AI</span><span>AI scribe</span><span>HIPAA-compliant</span></div>
+<a class="link" href="https://cloudclinic.com" target="_blank" rel="noopener">cloudclinic.com ↗</a></div>
+</article>
+</div></section>
+
+<section id="resume"><div class="wrap">
+<div class="eyebrow">Resume</div><h2>Background</h2>
+<p class="sub">A snapshot of my work. The full CV is available to download.</p>
+<div class="two">
+<div>
+<div class="row"><b>PhD Researcher, AI &amp; Cancer</b><span>University of Nottingham · Present</span></div>
+<div class="row"><b>Senior AI/ML &amp; Software Engineer</b><span>Goghr · Pollsensei · Cloud Clinic</span></div>
+<div class="row"><b>Focus areas</b><span>AI automation · ML systems · Healthcare AI · Custom software</span></div>
+<div class="btns" style="margin-top:26px"><a class="btn p" href="resume.pdf">Download resume (PDF)</a></div>
+</div>
+<div>
+<div class="row"><b>Patent applications</b><span>AI for EV fleet optimization; AI incentive platform for grid flexibility · 2025–2026</span></div>
+<div class="row"><b>Publications</b><span>Survey data management with AI/ML; human activity recognition in wearables; multilingual chat apps</span></div>
+<div class="row"><b>Google Scholar</b><span><a class="link" href="https://scholar.google.com/citations?user=_s08G90AAAAJ&hl=en" target="_blank" rel="noopener">View all publications ↗</a></span></div>
+</div></div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="eyebrow">Contact</div><h2>Let's talk about your project</h2>
+<p class="sub">Tell me what you're trying to improve. I'll reply with an honest view on what's possible.</p>
+<div class="btns"><a class="btn p" href="mailto:adeboye.daniel17@gmail.com">adeboye.daniel17@gmail.com</a></div>
+<div class="links"><a class="btn" href="https://github.com/daunsid" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/daniel-adeboye" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Daniel Adeboye · Senior AI/ML Engineer</div></footer>
+</body>
+</html>

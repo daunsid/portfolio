@@ -1,0 +1,33 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Daniel Adeboye — logo (dark background)</title>
+  <defs>
+    <style>
+      .stroke-main { stroke: #C9A24B; stroke-width: 8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thread { stroke: #5FA39C; stroke-width: 1.2; opacity: 0.55; }
+      .node { fill: #C9A24B; }
+      .node-teal { fill: #5FA39C; }
+      .ring { stroke: #4A5160; stroke-width: 1.2; fill: none; opacity: 0.7; }
+    </style>
+  </defs>
+
+  <circle cx="100" cy="100" r="100" fill="#0B0D10"/>
+  <circle class="ring" cx="100" cy="100" r="92"/>
+
+  <line class="thread" x1="55" y1="60" x2="127" y2="60"/>
+  <line class="thread" x1="55" y1="140" x2="108" y2="140"/>
+  <line class="thread" x1="55" y1="100" x2="127" y2="110"/>
+
+  <path class="stroke-main" d="M 55 60 L 55 140"/>
+  <path class="stroke-main" d="M 55 62 C 96 62, 96 138, 55 138"/>
+
+  <path class="stroke-main" d="M 127 60 L 108 140"/>
+  <path class="stroke-main" d="M 127 60 L 146 140"/>
+  <path class="stroke-main" d="M 114.5 110 L 139.5 110"/>
+
+  <circle class="node" cx="55" cy="60" r="4.5"/>
+  <circle class="node" cx="55" cy="140" r="4.5"/>
+  <circle class="node-teal" cx="127" cy="60" r="4.5"/>
+  <circle class="node" cx="108" cy="140" r="4.5"/>
+  <circle class="node" cx="146" cy="140" r="4.5"/>
+  <circle class="node-teal" cx="127" cy="110" r="3.5"/>
+</svg>
